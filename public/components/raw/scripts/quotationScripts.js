@@ -95,25 +95,25 @@ function triggerViewItems(id,cName,pName,cID,uID,status,discount,cAddress,cConta
 		var vat = subTotal * .12;
 		var grandTotal = subTotal + vat;
 		origSubtotal = subTotal;
-		$('td#discPrice').html(numeral(discount).format('0,0.00').bold());
+		$('td#discPrice').html(numeral(discount).format('0,0.00'));
 		$('#discount').val(discount);
-		$('span#vat').html(numeral(vat).format('0,0.00').bold());
-		$('label#gTotal').html(numeral(grandTotal).format('0,0.00').bold());
+		$('span#vat').html(numeral(vat).format('0,0.00'));
+		$('span#gTotal').html(numeral(grandTotal).format('0,0.00'));
 		$('#quotation-details').html('
-			<div class="col-md-4 col-md-offset-2">
-              Company/Customer: <b>'+cName+'</b> <br>
-              Address: <b>'+cAddress+'</b> <br>
-              Project Name: <b>'+pName+'</b>
+			<div class="pull-left">
+              Company/Customer: '+cName+' <br>
+              Address: '+cAddress+' <br>
+              Project Name: '+pName+'
             </div>
-            <div class="col-md-4">
-              Contact Person: <b>'+cContact+'</b> <br>
-              Telephone No.: <b>'+cPhone+'</b> <br>
-              Email Address: <b>'+cEmail+'</b>
+            <div class="pull-right">
+              Contact Person: '+cContact+' <br>
+              Telephone No.: '+cPhone+' <br>
+              Email Address: '+cEmail+'
             </div>
 		');
 			// Quotation #: <b>'+customID+'</b><br> Project Name: <b>'+pName+'</b><br> Customer/Company Name: <b>'+cName+'</b>
 
-		$('#runningPrice').html(numeral(total).format('0,0.00').bold());
+		$('#runningPrice').html(numeral(total).format('0,0.00'));
 		$('#preview-items').modal('show');
 	});
 }

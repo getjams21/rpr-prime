@@ -32,7 +32,7 @@
 		</div>
 	</div>
 	<div class="col-md-8" >
-		<div class="panel panel-info" style="max-height:323px;">
+		<div class="panel panel-info">
 		  <div class="panel-heading">
 		    <h3 class="panel-title"><b>Item Search</b></h3>
 		  </div>

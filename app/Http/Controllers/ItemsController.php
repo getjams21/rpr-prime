@@ -43,6 +43,7 @@ class ItemsController extends Controller
             $item->description=Input::get('description');
             $item->model=Input::get('model');
             $item->price=Input::get('price');
+            $item->effectivity_date=Input::get('effectivity_date');
             $item->unit=Input::get('unit');
             $item->type=Input::get('type');
             $item->save();
@@ -102,6 +103,7 @@ class ItemsController extends Controller
             $item->description=Input::get('description');
             $item->model=Input::get('model');
             $item->price=Input::get('price');
+            $item->effectivity_date=Input::get('effectivity_date');
             $item->unit=Input::get('unit');
             $item->type=Input::get('type');
             $item->save();

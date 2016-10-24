@@ -3,6 +3,7 @@
     @include('layouts.metalinks')
     <link href="{{ asset("/components/images/gallery/css/blueimp-gallery.min.css") }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset("/components/images/gallery/css/bootstrap-image-gallery.min.css") }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset ("/bower_components/datepicker/less/datepicker.less") }}" rel="stylesheet" type="text/css" />
 @stop
 @section('title','Items')
 @section('header')
@@ -58,5 +59,7 @@
         var APP_URL = {!! json_encode(url('/')) !!};
     </script>
     <script src="{{ asset ("/components/js/itemScripts.min.js") }}" type="text/javascript">
+        </script>
+    <script src="{{ asset ("/bower_components/datepicker/js/bootstrap-datepicker.js") }}" type="text/javascript">
         </script>
 @stop

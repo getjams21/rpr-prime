@@ -28,6 +28,15 @@
             <label>Price</label>
             <input class="form-control price" type="number" step="any" name="price" id="price" placeholder="Price" required>
           </div>
+          <div class="form-group ">
+            <label>Effectivity Date</label>
+            <div class="input-group date" data-provide="datepicker">
+              <div class="input-group-addon">
+                <i class="fa fa-calendar"></i>
+              </div>
+              <input type="text" class="form-control pull-right" id="datepicker" name="effectivity_date">
+            </div>
+          </div>
           <div class="form-group">
             <label>UoM</label>
             <input class="form-control unit" type="text" name="unit" id="unit" placeholder="Unit of Measure" required>

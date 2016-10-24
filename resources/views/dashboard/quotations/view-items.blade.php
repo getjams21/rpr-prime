@@ -26,14 +26,14 @@
           <!-- </div> -->
         </div>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" style="font-size:11px;">
         <div class="col-md-12" style="margin-bottom: 20px;">
           <div class="breadcrumb" style="background-color:#00c76c;border-radius:0px;font-size:18px;">
             <center><span><font color="white"><b>QUOTATION</b></font></span></center>
           </div>
-          <h4 id="quotation-details">
+          <div class="row container-fluid" id="quotation-details" style="margin-right:120px;margin-left: 120px;">
             
-          </h4>
+          </div>
         </div>
         <div class="panel panel-default edit-quotation" hidden>
         <div class="panel-body">
@@ -129,7 +129,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td id="total"><label class="pull-right">SUB TOTAL:</label></td>
+            <td id="total"><span class="pull-right">SUB TOTAL:</span></td>
             <td id="runningPrice"></td>
           </tr>
            <tr id="tr-discount">
@@ -138,7 +138,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><label class="pull-right">Discount:</label></td>
+            <td><span class="pull-right">Discount:</span></td>
             <td id="discPrice"></td>
           </tr>
           <tr>
@@ -147,7 +147,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><label class="pull-right">VAT:</label></td>
+            <td><span class="pull-right">VAT:</span></td>
             <td><span id="vat">(12%) &nbsp;</span></td>
           </tr>
           <tr>
@@ -156,8 +156,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><font size="3px;"><label class="pull-right">GRAND TOTAL:</label></font></td>
-            <td><font color="#008d4c" size="3px;"><label id="gTotal"></label></font></td>
+            <td><span class="pull-right">GRAND TOTAL:</span></td>
+            <td><span id="gTotal"></span></td>
           </tr>
         </tfoot>
         <input type="hidden" name="discount" id="discount" value="">
